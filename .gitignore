@@ -1,0 +1,30 @@
+# ==========================================
+# Keil MDK-ARM 编译及临时文件忽略
+# ==========================================
+
+# 忽略整个编译输出目录（包含 .o, .d, .crf, .axf, .hex, .map 等）
+**/MDK-ARM/mouse_paw3395/
+**/MDK-ARM/Listings/
+**/MDK-ARM/Objects/
+
+# 忽略 Keil 本地界面配置文件 (包含您的电脑用户名，必须忽略)
+**/MDK-ARM/*.uvguix.*
+**/MDK-ARM/*.uvgui.*
+
+# 忽略 Keil 调试选项文件 (防止频繁变动污染 Git 历史)
+**/MDK-ARM/*.uvoptx
+
+# 忽略调试器日志和临时设置
+**/MDK-ARM/JLinkLog.txt
+**/MDK-ARM/JLinkSettings.ini
+**/MDK-ARM/*.lst
+**/MDK-ARM/DebugConfig/
+**/MDK-ARM/RTE/
+
+# ==========================================
+# 其他常见忽略文件
+# ==========================================
+.vscode/
+.idea/
+*.bak
+*.dep
